@@ -1,0 +1,328 @@
+.text-divider {
+	display: inline-block;
+	position: relative;
+	height: 100%;
+}
+.buttonUserGroup{
+	padding-bottom: 5px;
+}
+
+.tittle {
+	position: absolute;
+	top: -13px;
+	left: 5px;
+	padding: 0 5px;
+	background-color: white;
+}
+
+/* CSS cho hộp thoại xác nhận */
+#confirmationDialog {
+	position: absolute;
+	background-color: #f9f9f9;
+	border: 1px solid #ccc;
+	padding: 10px;
+	z-index: 1;
+	display: none;
+}
+
+.table-user {
+	margin-top: 10px;
+    border-collapse: collapse;
+}
+.table-container {
+	max-height: 495px;
+	/* Chiều cao cố định */
+	overflow-y: auto;
+}
+.listGroup{
+	max-height: 454px;
+	/* Chiều cao cố định */
+	overflow-y: auto;
+}
+.listUser{
+	max-height: 492px;
+	background-color: #000;
+	/* Chiều cao cố định */
+	overflow-y: auto;
+}
+
+.table-container thead  {
+	position: sticky;
+	border: 2px black;
+	top: 0;
+}
+
+
+
+#serviceOfGroup {
+	margin: auto;
+	text-align: center;
+	/* Căn giữa văn bản ngang */
+}
+
+#serviceOfGroup th,
+#serviceOfGroup td {
+	vertical-align: middle;
+	/* Căn giữa văn bản dọc */
+}
+#serviceOfGroup td:last-child {
+	
+	align-items: center;
+	
+}
+.selected td{
+	background-color: aquamarine;
+}
+
+
+.table-user th,
+.table-user td {
+	border: none;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+}
+.table-user th:nth-child(1),
+.table-user th:nth-child(2){
+     border-top: 2px solid #000;
+}
+.table-user tr:last-child{
+     border-bottom: 2px solid #000;
+}
+.table-group {
+	width: 100%;
+	overflow: hidden;
+	/* Đảm bảo không có thanh cuộn cho toàn bộ bảng */
+}
+
+.custom-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.custom-table thead {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+}
+
+.custom-table thead th,
+.custom-table tbody td {
+
+	text-align: left;
+	vertical-align: top;
+}
+
+.custom-table tbody td:first-child {
+	width: 78px;
+	text-align: left;
+	vertical-align: top;
+
+}
+
+.custom-table tbody {
+	display: block;
+	max-height: 125px;
+	/* Điều chỉnh chiều cao theo ý bạn */
+	overflow-y: auto;
+	width: 100%;
+}
+
+.custom-table tbody tr {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+}
+
+.custom-table tbody tr:nth-of-type(odd) {
+	background-color: rgba(0, 0, 0, 0.05);
+	/* Màu nền cho các hàng lẻ */
+}
+
+.custom-table tbody tr:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+	/* Màu nền khi hover */
+}
+.bordered-3 {
+	border-width: 3px !important;
+}
+
+.table-bordered td,
+.table-bordered th {
+	border-width: 3px !important;
+}
+
+.list-group-item-action:hover {
+	background-color: #343a40;
+	/* Màu nền đậm hơn khi hover */
+	color: #ffffff;
+	/* Màu chữ trắng khi hover */
+}
+
+.list-group-item-action a{
+	color: black !important;
+}
+.error{
+	color: red;
+	font-size: 12px;
+}
+/* css menu chuyển chức năng hệ thống */
+ #contextMenu {
+ 	display: none;
+ 	position: absolute;
+ 	z-index: 1000;
+ 	background-color: white;
+ 	border: 1px solid #ccc;
+ 	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+ }
+
+ #contextMenu ul {
+ 	list-style-type: none;
+ 	padding: 0;
+ 	margin: 0;
+ }
+
+ #contextMenu ul li {
+ 	padding: 8px 12px;
+ 	cursor: pointer;
+ }
+
+ #contextMenu ul li:hover {
+ 	background-color: #f0f0f0;
+ }
+
+ #alertMessage {
+ 	position: fixed;
+ 	top: 20px;
+ 	right: 20px;
+ 	display: none;
+ 	z-index: 1050;
+ 	/* Ensure it is above other elements */
+ }
+ 
+ /* Đặt kiểu cho phần chứa xác nhận */
+.confirmClose {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto; /* Đặt giữa trang */
+    text-align: center;
+    position: absolute;
+    top: 10px;
+   left: 50%;
+    transform: translateX(-50%);
+}
+
+.confirmClose h6 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Đặt kiểu cho các nút */
+.confirmClose .btn {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+/* Đặt màu sắc cho nút xác nhận */
+.confirmClose .confirm-button {
+    background-color:#6c757d; /* Màu xanh lá */
+    border: none;
+    color: white;
+}
+
+.confirmClose .confirm-button:hover {
+    background-color:#6c757d; /* Màu xanh lá đậm hơn khi hover */
+}
+
+/* Đặt màu sắc cho nút hủy */
+.confirmClose .cancel-button {
+    background-color:#6c757d; /* Màu đỏ */
+    border: none;
+    color: white;
+}
+
+.confirmClose .cancel-button:hover {
+    background-color:#6c757d; /* Màu đỏ đậm hơn khi hover */
+}
+
+/* Đặt kiểu cho lưới */
+.confirmClose .col-6 {
+    padding: 0 10px;
+}
+
+/* custom ô checkbox*/
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  border: 1px solid black; /* Thêm border màu đen cho checkbox */
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: white;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: white;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 3px;
+  width: 8px;
+  height: 15px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
